@@ -1,0 +1,149 @@
+$bluedark: #3333ff;
+$whiteLight: #FFFFFF;
+$whitelighter: #FFFFFF;
+$textColor: #b3b3b3;
+
+
+// * {
+//   box-sizing: border-box;
+// }
+
+.App {
+  height: 100%;
+  background: whitesmoke;
+  display: flex;
+}
+
+.outerWrap{
+  height: 100vh;
+  min-height: 100%;
+}
+
+.musicControlls{
+  background: rgb(85, 82, 81);
+  text-align: center;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #FFFFFF;
+}
+
+.navBar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  height: 100%;
+  background: #3333ff;
+  padding: 10px;
+  .logo {
+    padding: 1.5rem 1.5rem;
+    svg {
+      max-width: 130px;
+      p {
+         fill: white
+      }
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      color: white;
+      list-style-type: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      padding: 0.7rem;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.upperNav{
+  background: orangered;
+  height: 150px;
+  width: 100%;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  // align-items: center;
+  color: #FFFFFF;
+  
+}
+
+.main{
+  width: 100%;
+  .mainContent{
+    color: #FFFFFF;
+    padding: 0.5rem 2rem;
+    h1{
+      font-size: 1.8rem;
+    }
+    h4{
+      color: red;
+    }
+  }
+}
+
+.cardsWrap{
+  .card{
+    background: white;
+    border-radius: 10px;
+    width: 80px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px 0 rgba(0,0,0,.3), 0 1px 2px 0 rgba(0,0,0,.2);
+    .cardImage{
+      height: 50px;
+      box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3),
+        0 1px 2px 0 rgba(0, 0, 0, 0.2)
+      img {
+        height: 50%;
+        width: 50%;
+        object-fit: contain;
+      }
+    }
+
+    .cardContent{
+      padding: 0.4rem 0;
+      h3{
+        font-weight: 600;
+        font-size: 0.9rem;
+        color:white;
+      }
+    }
+  }
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.row3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+.musicControllers_icons{
+  transform: scale(1.5);
+}
+
+.musicControllers_range{
+  width: 800px;
+}
